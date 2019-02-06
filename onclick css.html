@@ -1,0 +1,34 @@
+<html>
+<head>
+<style type="text/css">
+#toggle {
+	display:none;
+}
+
+.one {
+	display: block;
+	background: #08C;
+	padding: 5px;
+	border: 1px solid rgba(0,0,0,.1);
+	border-radius: 2px;
+	color: white;
+	font-weight: bold;
+}
+
+#toggle:checked ~ .to-be-changed {
+	color: red;
+	position:relative;
+	top:30%;
+}
+
+</style>
+</head>
+<body>
+<input type="checkbox" id="toggle">
+<label for="toggle" class="one">Click me!</label>
+<label style="position:relative; top:50%;" for="toggle">Click me22!</label>
+<div class="to-be-changed">I'm going to be red! It's gonna be legen... Wait for it...</div>
+
+
+</body>
+</html>
